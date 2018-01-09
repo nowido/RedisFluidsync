@@ -28,7 +28,7 @@ Clients will use `“proxyName”` to access Redis proxy; it is mandatory field.
 Run proxy:
 
 ```
-$npm node redis_fluidsync_ws.js
+$node redis_fluidsync_ws.js
 ```
 
 ## Clients
