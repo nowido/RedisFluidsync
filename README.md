@@ -30,3 +30,36 @@ Run proxy:
 ```
 $npm node redis_fluidsync_ws.js
 ```
+
+## Clients
+
+You can access Redis proxy from browser:
+
+```
+<script src="https://fluidsync-8f7e4.firebaseapp.com/fluidsync_ws.js"></script>
+<script src="https://fluidsyncredis.firebaseapp.com/redis_client.js"></script>
+
+...
+
+const redis = new RedisProxy
+({
+    remoteNodeName: '<proxyName>'
+    // see docs for other constructor parameters
+});
+```
+
+You also can access Redis proxy from Node.js process:
+
+```
+$npm install fluidsync_redis_proxy
+
+...
+
+const RedisProxy = require('fluidsync_redis_proxy');
+
+const redis = new RedisProxy({
+    remoteNodeName: '<proxyName>'    
+    // see docs for other constructor parameters
+});
+```
+
