@@ -6,7 +6,7 @@ This proxy provides [**FluidSync**](https://github.com/nowido/FluidsyncHerokuWS)
 
 Prerequisites: 
 
-- `fluidsync_ws_client` module must be installed before running proxy
+- `fluidsync_ws_client` module must be installed before running proxy:
 
 ```
 $npm install fluidsync_ws_client
@@ -21,6 +21,7 @@ $npm install fluidsync_ws_client
    "password": "<use your secret, or remove this field>",
    "proxyName": "<something-UUID-like-unguessable-fe-954880759813FF8C>"
 }
+
 ```
 
 Clients will use `“proxyName”` to access Redis proxy; it is mandatory field. We recommend to choose a unique unguessable name. The fields `“host”`, `“port”`, and `“password”` may be omitted (defaults are `“127.0.0.1”`, `6379`, no password).
