@@ -41,8 +41,7 @@ You can access Redis proxy from browser:
 
 ...
 
-const redis = new RedisProxy
-({
+const redis = new RedisProxy({
     remoteNodeName: '<proxyName>'
     // see docs for other constructor parameters
 });
