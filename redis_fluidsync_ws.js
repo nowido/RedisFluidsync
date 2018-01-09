@@ -597,7 +597,7 @@ function startGarbageCollectorIfNeeded()
         
             garbageCollectionPresent = true;
                                         
-            console.log('garbage collector is now on');      
+            //console.log('garbage collector is now on');      
         }        
     }
 }
@@ -612,7 +612,7 @@ function stopGarbageCollectorIfNeeded()
 
             garbageCollectionPresent = false;
     
-            console.log('garbage collector is now off');    
+            //console.log('garbage collector is now off');    
         }
     }
 }
@@ -627,7 +627,7 @@ function onGarbageCollectorTick()
 
         let age = timeNow - entry.timestamp;
 
-        console.log(eventChannel + ': ' + age + ': (of ' + TIME_LICENSE_PERIOD + ')');
+        //console.log(eventChannel + ': ' + age + ': (of ' + TIME_LICENSE_PERIOD + ')');
 
         if(age >= TIME_LICENSE_PERIOD)
         {
@@ -713,7 +713,7 @@ fluidsync.addEventListener('close', (fluidsync, code, reason) => {
 
 fluidsync.addEventListener(proxyChannel, function (fluidsync, data) 
 {
-    console.log(data);
+    //console.log(data);
     
     let message = data.payload;
 
