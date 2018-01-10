@@ -6,9 +6,10 @@ This proxy provides [**FluidSync**](https://github.com/nowido/FluidsyncHerokuWS)
 
 Prerequisites: 
 
-- `fluidsync_ws_client` module must be installed before running proxy:
+- `redis` and `fluidsync_ws_client` modules must be installed before running proxy:
 
 ```
+$npm install redis
 $npm install fluidsync_ws_client
 ```
 
